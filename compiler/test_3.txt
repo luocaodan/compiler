@@ -1,0 +1,34 @@
+int O[100];
+char c = 'ab';
+
+int fib(int n) {
+    int i;         
+
+    if(n >= 100)
+        return(-1);
+    else {
+
+    }
+    O[0] = 0;
+	if(n >= 1) {
+		O[1] = 1;
+	}
+	else {
+	}
+    i = 2;
+    while(i <= n) {
+        O[i] = O[i-1] + O[i-2];
+        i = i + 1;
+    }
+    return(O[n]);
+}
+
+void main() {
+    int fib_num;
+
+    printf("input fibonacci number:");
+    scanf(fib_num);
+    printf(fib_num);
+    printf("-th fibonacci number is ");
+    printf(fib(fib_num));
+}

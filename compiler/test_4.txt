@@ -1,0 +1,30 @@
+void odd_or_even(int a) {
+    int flag;            
+    int temp;
+    temp = a;
+    if(temp < 0)
+        temp = -temp;
+ 
+    flag = temp - temp/2*2;
+    switch(flag) {
+        case 0: {
+            printf(a);
+            printf(" is even number");
+        }
+        case 1: {
+            printf(a);
+            printf(" is odd number");
+        }
+        default: {
+            printf("error");
+        }
+    }
+}
+
+void main() {
+    int num4;
+	
+	printf("input a number to judge odd or even:");
+    scanf(num4);
+    odd_or_even(num4);
+}

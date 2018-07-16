@@ -1,0 +1,78 @@
+void haha () {
+}
+
+int gcd() {
+    int temp;
+	a = hehe
+    if(a <= b) {
+        temp = a;
+        a = b;
+        b = temp;
+    }
+    else {
+
+    }
+    if(b == 0) {
+        return(a);
+    }
+    else {
+        return(gcd(b, a-a/b*b));
+    }
+}
+
+int fib(int n) {
+    int i;         
+
+    if(n >= 100)
+        return(-1);
+    else {
+
+    }
+    O[0] = 0;
+    O[1] = 1;
+    i = 2;
+    while(i <= n) {
+        O[i] = O[i-1] + O[i-2];
+        i = i + 1;
+    }
+    return(O[n]);
+}
+void odd_or_even(int a) {
+    int flag;            
+    int temp;
+    temp = a;
+    if(temp < 0)
+        temp = -temp;
+    else {
+
+    }
+    flag = temp - temp/2*2;
+    switch(flag) {
+        case 0: {
+            printf(a);
+            printf(" is even number");
+        }
+        case 1: {
+            printf(a);
+            printf(" is odd number");
+        }
+        default: {
+            printf("error");
+        }
+    }
+}
+void main() {
+    int num1;
+    int num2;
+    int num3;
+    int fib_num;
+    int num4;
+
+	odd_or_eve(1);
+	printf("input two numbers:");
+    scanf(num2, num3);
+    printf("greatest common divisor is: ");
+    printf(gcd(num2, num3));
+	
+	return ;
+}

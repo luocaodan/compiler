@@ -1,0 +1,27 @@
+int gcd(int a, int b) 
+    int temp;
+    if(a <= b) {
+        temp = a;
+        a = b;
+        b = temp;
+    }
+    else {
+
+    }
+    if(b == 0) {
+        return(a);
+    }
+    else {
+        return(gcd(b, a-a/b*b));
+    }
+}
+
+void main() {
+	int num2;
+    int num3;
+	
+	printf("input two numbers:");
+    scanf(num2, num3);
+    printf("greatest common divisor is: ");
+    printf(gcd(num2, num3));
+}

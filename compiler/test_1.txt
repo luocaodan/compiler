@@ -1,0 +1,25 @@
+int count;
+
+void hanoi(int n) {
+    if(n == 1) {
+        count = count + 1;
+        return;
+    }
+    else {
+        hanoi(n-1);
+        count = count + 1;
+        hanoi(n-1);
+    }
+}
+
+void main() {
+    int num1;
+	
+	count = 10000000000000;
+    printf("input hanoi number:");
+    scanf(num1);
+    hanoi(num1);
+    printf("move ");
+    printf(count);
+    printf(" steps");
+}
